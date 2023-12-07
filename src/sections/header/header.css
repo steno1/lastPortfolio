@@ -35,6 +35,7 @@ header {
     align-items: center;
     gap: 1.2rem;
   }
+ 
   
   .header__socials {
     position: absolute;
@@ -55,10 +56,12 @@ header {
     border-radius: var(--border-radius-3);
   }
   
+  
   .header__socials a:hover {
     background: var(--color-primary);
     color: var(--color-white);
     transform: translateX(-0.5rem);
+    
   }
   
   /* MEDIA QUERIES FOR TABLETS */
