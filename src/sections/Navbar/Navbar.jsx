@@ -3,8 +3,10 @@ import "./Nav.css"
 import { IoMdColorPalette } from "react-icons/io";
 import myLogo from "../../asset/myLogo2.jpg"
 import navData from "../../data/navData"
+import { useModalContext } from "../../context/modalContext";
 
 const Navbar = () => {
+  const {showModalHandler}=useModalContext();
   return (
     <nav>
       <div className="container nav__container">
@@ -18,7 +20,7 @@ const Navbar = () => {
 
           </li>)}
         </ul>
-        <button id="theme__icon"><IoMdColorPalette /></button> 
+        <button id="theme__icon" onClick={showModalHandler}><IoMdColorPalette /></button> 
         </div>
     </nav>
   )
