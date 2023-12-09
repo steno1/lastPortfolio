@@ -4,7 +4,8 @@ import themeReducer from "./themeReducer"; // Imported themeReducer from the rel
 
 export const ThemeContext = createContext(); // Created a context named ThemeContext
 
-const initialThemeState = { primary: "color-1", background: "bg-1" }; // Initialized initial theme state
+const initialThemeState = JSON.parse(localStorage.getItem("themeSettings"))||
+{ primary: "color-1", background: "bg-1" }; // Initialized initial theme state
 
 export const ThemeProvider = ({ children }) => {
   const [themeState, dispatchTheme] = useReducer(themeReducer, initialThemeState); // Used useReducer to manage theme state and dispatch
@@ -12,6 +13,11 @@ export const ThemeProvider = ({ children }) => {
     dispatchTheme({ type: buttonClassName }); // Dispatches an action based on buttonClassName
   };
   //console.log(themeState)
+
+  //save theme settings to local storage
+  useEffect(()=>{
+localStorage.setItem("themeSettings", JSON.stringify(themeState))
+  },[themeState])
   
   return ( // Returned the ThemeContext.Provider with children
     <ThemeContext.Provider value={{ themeState, themeHandler }}>
