@@ -1,41 +1,48 @@
 import "./about.css";
 
-import Card from "../../components/card/Card";
-import { IoMdDownload } from "react-icons/io";
-import aboutData from "../../data/aboutData";
-import cv from "../../asset/cv.pdf";
-import myPics from "../../asset/myPics.jpg";
+import Card from "../../components/card/Card"; // Component for rendering individual cards
+import { IoMdDownload } from "react-icons/io"; // Icon component for download button
+import aboutData from "../../data/aboutData"; // Data containing information for cards
+import cv from "../../asset/cv.pdf"; // Link to the CV (resume) file
+import myPics from "../../asset/pics.jpg"; // Image of the developer
 
+// About component function
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" data-aos="fade-in">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
+            {/* Developer's portrait */}
             <img src={myPics} alt="My Portrait" />
           </div>
         </div>
         <div className="about__right">
+          {/* Heading */}
           <h2>About Me</h2>
+          
+          {/* Rendering cards with information */}
           <div className=" about__cards">
-            {aboutData.map(item=><Card key={item.id}className ='about__card'>
+            {aboutData.map(item => (
+              <Card key={item.id} className="about__card">
                 <span className="about__card-icon">
-                {item.icon}
+                  {item.icon}
                 </span>
                 <h5>{item.title}</h5>
                 <small>{item.desc}</small>
-                
-            </Card>)}
-          
-          
+              </Card>
+            ))}
           </div>
-         
+          
+          {/* Description paragraphs */}
           <p>
-          I'm Onu Princeley Toochukwu, a full-stack web developer, I bring my skills and passion to create digital solutions that resonate with clients and users alike.
+            I'm Onu Princeley Toochukwu, a full-stack web developer. I bring my skills and passion to create digital solutions that resonate with clients and users alike.
           </p>
           <p>
             Let's collaborate and transform your ideas into a digital reality. Whether it's a website, web application, or any digital project, let's discuss your goals and craft a solution that meets your needs.
           </p>
+          
+          {/* Download CV button */}
           <a href={cv} download className="btn primary">
             Download CV <IoMdDownload />
           </a>
@@ -45,4 +52,5 @@ const About = () => {
   );
 };
 
+// Exporting the About component
 export default About;

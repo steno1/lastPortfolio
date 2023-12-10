@@ -1,13 +1,14 @@
-// PrimaryColor.jsx
-
 import React from 'react';
-import { useThemeContext } from '../context/themeContext';
+import { useThemeContext } from '../context/themeContext'; // Importing theme context
 
+// PrimaryColor component function
 const PrimaryColor = ({ className }) => {
-  const {themeHandler}=useThemeContext()
+  const { themeHandler } = useThemeContext(); // Accessing themeHandler from the theme context
+
   return (
-    <button className={className}
-     onClick={()=>themeHandler(className)}>
+    // Button representing a primary color option
+    <button className={className} onClick={() => themeHandler(className)}>
+      {/* Empty button, typically representing a color swatch or selection */}
     </button>
   );
 };

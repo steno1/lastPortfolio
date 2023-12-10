@@ -25,8 +25,8 @@
   }
   
   .about__portrait img {
-    width: 100%; /* Ensure the image takes up the full width of its container */
-    height: auto; /* Maintain aspect ratio */
+    width: 18.75rem; 
+    height: 26.875rem; 
   }
   .about__cards{
     margin: 3rem 0 1.5rem;

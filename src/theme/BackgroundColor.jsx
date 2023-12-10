@@ -1,13 +1,16 @@
-import React from 'react'
-import { useThemeContext } from '../context/themeContext'
+import React from 'react';
+import { useThemeContext } from '../context/themeContext'; // Importing theme context
 
-const BackgroundColor = ({className}) => {
-  const {themeHandler}=useThemeContext();
+// BackgroundColor component function
+const BackgroundColor = ({ className }) => {
+  const { themeHandler } = useThemeContext(); // Accessing themeHandler from the theme context
+
   return (
-   <button className={className} onClick={()=>themeHandler(className)}>
+    // Button representing a background color option
+    <button className={className} onClick={() => themeHandler(className)}>
+      {/* Empty button, typically representing a color swatch or selection */}
+    </button>
+  );
+};
 
-   </button>
-  )
-}
-
-export default BackgroundColor
+export default BackgroundColor;

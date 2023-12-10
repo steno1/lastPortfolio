@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const Nav = ({className, item}) => {
+// Nav component function
+const Nav = ({ className, item }) => {
   return (
-    <li className={className}><a href={item.link}>{item.icon}</a></li>
-  )
-}
+    // Rendering a list item (<li>) containing a link (<a>) for navigation
+    <li className={className}>
+      <a href={item.link}>{item.icon}</a>
+    </li>
+  );
+};
 
-export default Nav
+export default Nav;

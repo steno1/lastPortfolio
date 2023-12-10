@@ -1,27 +1,32 @@
-import Card from '../../components/card/Card'
-import React from 'react'
+import Card from '../../components/card/Card'; // Component for individual project card
+import React from 'react'; // Importing React
 
-const Project = ({Project}) => {
+// Project component function
+const Project = ({ Project }) => {
   return (
-    <Card className="portfolio__project">
-        <div className='portfolio__project-image'>
-        <img src={Project.image} alt='portfolioImage'/>
-        </div>
-        <h4>{Project.title}</h4>
-        <p>{Project.description}</p>
-        <div className='portfolio__project-cta'>
-        <a href={Project.demo}
-         className='btn sm' target='_blank' rel="noopener noreferrer">
-            Demo
-         </a>
-         <a href={Project.github}
-         className='btn sm primary' target='_blank' rel="noopener noreferrer">
-            Github
-         </a>
-        </div>
-        
+    // Rendering individual project card
+    <Card className="portfolio__project" >
+      <div className='portfolio__project-image'>
+        {/* Displaying project image */}
+        <img src={Project.image} alt='portfolioImage' />
+      </div>
+      {/* Project title */}
+      <h4>{Project.title}</h4>
+      {/* Project description */}
+      <p>{Project.description}</p>
+      <div className='portfolio__project-cta'>
+        {/* Button for project demo */}
+        <a href={Project.demo} className='btn sm' target='_blank' rel="noopener noreferrer">
+          Demo
+        </a>
+        {/* Button for project GitHub link */}
+        <a href={Project.github} className='btn sm primary' target='_blank' rel="noopener noreferrer">
+          Github
+        </a>
+      </div>
     </Card>
-  )
-}
+  );
+};
 
-export default Project
+// Exporting the Project component
+export default Project;
