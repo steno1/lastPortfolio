@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+Portfolio Website Documentation
+Overview
+This documentation provides insights into the development and features of the portfolio website built using React. It encompasses various sections such as Navbar, Headers, Abouts, Services, Projects, FAQs, and Footers. The site also incorporates theme customization using ContextAPI, employs local storage for persisting user preferences, and is designed to be very responsive. The deployment is facilitated through GitHub Pages.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technologies Used
+React
+ContextAPI
+Local Storage
+GitHub Pages
+Components
+Navbar
+Contains navigation links to different sections of the website.
 
-## Available Scripts
+Header
+Represents the main header section of the website.
 
-In the project directory, you can run:
+About
+Provides information about the website owner or developer.
 
-### `npm start`
+Services
+Showcases the services offered by the website owner.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Projects
+Displays the projects or works of the website owner.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+FAQs
+Includes frequently asked questions and their answers.
 
-### `npm test`
+Footer
+Footer section with relevant contact information or links.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+FloatingNavbar
+Implements a floating navbar for navigation (responsive design).
 
-### `npm run build`
+Contexts
+ThemeContext
+Manages the theme of the website using the ContextAPI.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Utilities
+localStorage
+Handles storing and retrieving data from the local storage.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deployment
+The website is deployed using GitHub Pages. To deploy updates or changes:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Commit and push the changes to the main branch of the GitHub repository.
+Visit the repository settings on GitHub.
+Under the "GitHub Pages" section, select the main branch as the source.
+Save the settings.
+Usage
+To run the website locally:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Clone the GitHub repository.
+Navigate to the project directory.
+Run npm install to install dependencies.
+Run npm start to start the development server.
+Access the website in your browser at http://localhost:3000.
+Notes
+The website is designed to be very responsive to different screen sizes and devices.
+For any changes or modifications, refer to individual component files for relevant code sections.
+This documentation aims to provide an overview of the portfolio website's structure, components, deployment process, and usage for efficient management and future development.
