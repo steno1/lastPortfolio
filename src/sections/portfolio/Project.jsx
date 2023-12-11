@@ -20,7 +20,7 @@ const Project = ({ Project }) => {
           Demo
         </a>
         {/* Button for project GitHub link */}
-        <a href={Project.github} className='btn sm primary' target='_blank' rel="noopener noreferrer">
+        <a href={Project.githubLink} className='btn sm primary' target='_blank' rel="noopener noreferrer">
           Github
         </a>
       </div>
