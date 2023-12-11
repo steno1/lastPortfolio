@@ -46,7 +46,7 @@ The website is deployed using GitHub Pages. To deploy updates or changes:
 Commit and push the changes to the main branch of the GitHub repository.
 Visit the repository settings on GitHub.
 Under the "GitHub Pages" section, select the main branch as the source.
-Save the settings.
+Save the settings..
 Usage
 To run the website locally:
 
